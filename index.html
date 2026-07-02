@@ -182,7 +182,7 @@
             <label>Name :</label>
             <input type="text" id="nameInput" class="hacker-input" placeholder="Enter Identity">
             
-            <label>Password : Enter the B-day</label>
+            <label>Password :</label>
             <input type="password" id="pwdInput" class="hacker-input" placeholder="DDMMYYYY">
             
             <button class="hacker-btn" onclick="attemptLogin()">INITIATE HANDSHAKE</button>
@@ -259,7 +259,7 @@
             const errorDiv = document.getElementById('loginError');
 
             if (pwd !== SYSTEM_KEY) {
-                errorDiv.innerText = "ACCESS DENIED: INVALID B-DAY.";
+                errorDiv.innerText = "ACCESS DENIED: INVALID Password";
                 return;
             }
 
